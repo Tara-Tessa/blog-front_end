@@ -19,7 +19,7 @@ export default function Home(articles) {
         <div className={styles.grid}>
 
           {posts.map(article => (
-            <a key={article.id} href="#" className={styles.card}>
+            <a key={article.id} href={`/articles/${article.slug}`} className={styles.card}>
             <h3>{article.title}</h3>
             <p>{article.description}</p>
           </a>
